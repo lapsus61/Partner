@@ -1,0 +1,10 @@
+KMV9$="8"+AD.DEP$+AR.COD$+"99999999"			
+rec_ext: EXTRACT RECORD(CMOV,KNUM=1,KEY=KMV9$,END=rec_end,DOM=no_kcmov)MV2$			
+no_kcmov: KMV9$=KEYP(CMOV)			
+READ RECORD(C[9],KNUM=1,KEY=KMV9$,END=rec_end,DOM=rec_next)MV2$; GOTO rec_esi
+rec_end:			
+end			
+rec_esi:	
+rem code
+rem code
+goto rec_ext
