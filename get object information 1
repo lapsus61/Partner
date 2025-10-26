@@ -1,0 +1,3 @@
+dim id1420[2]
+DIM ID_P$:"X:U(2),Y:U(2),W:U(2),H:U(2)"
+ID_P$=CTRL(gb__sysgui,1421,0), id1420[1]=id_p.x
